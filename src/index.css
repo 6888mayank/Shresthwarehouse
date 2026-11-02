@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #102B4E;
+    --secondary: #245B91;
+    --accent: #F28C28;
+    --accent-hover: #d9771e;
+    --brand-bg: #FFFFFF;
+    --brand-alt: #F4F7FA;
+    --brand-text: #252B35;
+    --brand-muted: #5A6578;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #252B35;
+    background-color: #FFFFFF;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Custom utility and aesthetic classes */
+.bg-navy-900 {
+  background-color: #0B1C33;
+}
+.bg-navy-800 {
+  background-color: #102B4E;
+}
+.bg-navy-700 {
+  background-color: #183C6C;
+}
+.bg-navy-600 {
+  background-color: #245B91;
+}
+.text-navy-900 {
+  color: #0B1C33;
+}
+.text-navy-800 {
+  color: #102B4E;
+}
+.text-navy-600 {
+  color: #245B91;
+}
+.bg-accent {
+  background-color: #F28C28;
+}
+.text-accent {
+  color: #F28C28;
+}
+.border-accent {
+  border-color: #F28C28;
+}
+.bg-alt-light {
+  background-color: #F4F7FA;
+}
+.text-charcoal {
+  color: #252B35;
+}
+
+/* Smooth glassmorphic effects */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(16, 43, 78, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F7FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #245B91;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #102B4E;
+}
